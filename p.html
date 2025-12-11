@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toufiqul Islam — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#060623;
+      --card:#0f1728;
+      --accent1:#9b48b4;
+      --accent2:#6c7ef3;
+      --muted:#bfc7e6;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg,var(--bg) 0%, #07072a 60%);
+      color: #eaf0ff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+    /* container */
+    .container{max-width:1100px;margin:0 auto;padding:24px;}
+
+    /* NAV */
+    nav{
+      display:flex;align-items:center;justify-content:space-between;padding:12px 0;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    .brand h1{font-size:1rem;margin:0}
+
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;font-weight:500}
+    .menu a:hover{color:white;background:rgba(255,255,255,0.03)}
+
+    .cta{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:8px 14px;border-radius:10px;color:white;text-decoration:none;font-weight:600}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:36px 0}
+    .hero .intro{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:16px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .intro h2{font-size:2.2rem;margin:0 0 12px}
+    .intro p{margin:0 0 18px;color:var(--muted)}
+    .badges{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{background:var(--glass);padding:8px 10px;border-radius:999px;font-weight:600;color:var(--muted);font-size:0.9rem}
+
+    .portrait{display:flex;align-items:center;justify-content:center}
+    .portrait img{width:100%;max-width:360px;border-radius:16px;border:3px solid rgba(255,255,255,0.04);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+
+    /* SECTIONS */
+    section{margin:28px 0}
+    h3.section-title{margin:0 0 12px;font-size:1.15rem}
+    .cards{display:flex;gap:18px;flex-wrap:wrap}
+    .card{background:var(--card);padding:16px;border-radius:12px;flex:1 1 220px;min-width:180px}
+    .card h4{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    /* Projects list */
+    .projects ul{list-style:none;padding-left:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+    .projects li{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+    /* Skills */
+    .skills{display:flex;gap:12px;flex-wrap:wrap}
+    .skill{padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);font-weight:600}
+
+    /* Profiles */
+    .profiles a{display:inline-block;margin-right:12px;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted);font-weight:600}
+
+    /* Contact */
+    .contact{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .contact a{color:var(--muted);text-decoration:none}
+
+    /* footer */
+    footer{padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:0.95rem}
+
+    /* small screens */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .menu{display:none}
+    }
+
+    /* tiny improvements */
+    .muted{color:var(--muted)}
+    .highlight{color:var(--accent1);font-weight:700}
+
+    /* animated gradient text */
+    .name-gradient{background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="logo">TI</div>
+        <div>
+          <div style="font-size:0.85rem;color:var(--muted);">Hi, I'm</div>
+          <div style="font-weight:700">Toufiqul Islam</div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
+        <a href="#profiles">Profiles</a>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <h2>Hello — I'm <span class="name-gradient">Toufiqul</span></h2>
+          <p>Passionate software developer focused on web & app development. I build useful, polished projects and keep learning new tech every week.</p>
+
+          <div class="badges">
+            <div class="badge">C++</div>
+            <div class="badge">Python</div>
+            <div class="badge">Java</div>
+            <div class="badge">React</div>
+            <div class="badge">AWS</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
+            <a class="cta" href="#projects">View Projects</a>
+            <a style="padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);text-decoration:none;color:var(--muted)" href="#contact">Hire me</a>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <img src="ovi.jpg" alt="Toufiqul portrait" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'600\'><rect width=\'100%\' height=\'100%\' fill=\'%23060623\' /><text x=\'50%\' y=\'50%\' fill=\'%23ffffff%27 font-size=\'28\' font-family=\'Poppins\' text-anchor=\'middle\'>Add a photo named ovi.jpg in the same folder</text></svg>'" />
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h3 class="section-title">Projects</h3>
+        <ul>
+          <li>
+            <strong>Buy from Farmer</strong>
+            <div class="muted">A marketplace connecting farmers and buyers with price comparison and logistic features.</div>
+          </li>
+          <li>
+            <strong>Design Your Car</strong>
+            <div class="muted">Interactive UI to customize and preview car designs (front-end + canvas).</div>
+          </li>
+          <li>
+            <strong>AI Chatbot</strong>
+            <div class="muted">Conversational agent prototype using simple intents and knowledge base.</div>
+          </li>
+          <li>
+            <strong>Price Compare</strong>
+            <div class="muted">Scraper + aggregator showing best prices across stores (demo).</div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills">
+          <div class="skill">Web Development</div>
+          <div class="skill">App Development</div>
+          <div class="skill">Algorithms & Problem Solving</div>
+          <div class="skill">AI / ML Basics</div>
+          <div class="skill">AWS</div>
+        </div>
+      </section>
+
+      <section id="languages">
+        <h3 class="section-title">Languages</h3>
+        <div class="cards">
+          <div class="card"><h4>C++</h4><p>Strong fundamentals, competitive programming focus.</p></div>
+          <div class="card"><h4>Java</h4><p>Object-oriented projects and data-structures practice.</p></div>
+          <div class="card"><h4>Python</h4><p>Scripting, automation, and AI prototypes.</p></div>
+          <div class="card"><h4>JavaScript / HTML / CSS</h4><p>Front-end UI, interactions and small fullstack apps.</p></div>
+        </div>
+      </section>
+
+      <section id="profiles" class="profiles">
+        <h3 class="section-title">Profiles</h3>
+        <div style="margin:8px 0">
+          <a href="https://codeforces.com/profile/toufiqulislam228" target="_blank">Codeforces</a>
+          <a href="https://leetcode.com/u/ovi_27/" target="_blank">LeetCode</a>
+          <a href="https://github.com/Toufiqul-27" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3 class="section-title">Contact</h3>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div><strong>Email:</strong> <a href="mailto:toufiqulislam228@gmail.com">toufiqulislam228@gmail.com</a></div>
+          <div><strong>Phone:</strong> <a href="tel:+8801855617232">+880 1855 617232</a></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© <strong>Toufiqul Islam</strong> — Built with ❤️</div>
+        <div class="muted">Made for portfolio & practice • Responsive</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional: small interactive touches -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    // typed effect in intro if you want
+    try{
+      new Typed('.badge', {strings:['C++','Python'], typeSpeed:60, backSpeed:40, loop:true});
+    }catch(e){}
+
+    // smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href');
+        if(id==='#')return;
+        document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
