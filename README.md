@@ -32,3 +32,7 @@ Open `index.html` in a browser or run `python -m http.server 8080` from the fold
 ## Updating the website
 
 Project titles and links are in `index.html`. Design tokens/styles live in `styles.css`, interactions in `script.js`. Never put private tokens/credentials in a static portfolio.
+
+## Portfolio refresh — 2026-11-01
+
+Updated with the portfolio owner's supplied portrait, LinkedIn profile URL, Southeast University CSE background, Codeforces profile, and verified projects. The public site intentionally excludes residential address and phone number from the source CV. The LinkedIn page itself was not accessible for independent biography verification.
