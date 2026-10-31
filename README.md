@@ -1,44 +1,49 @@
-# Personal Portfolio
+<div align="center">
+  <img src="./assets/github-banner.svg" alt="Toufiqul Islam — software engineering portfolio" width="100%"/>
+  <h1>Personal Portfolio</h1>
+  <p>A minimal, dark-themed developer portfolio built with HTML and CSS.</p>
+  <p><a href="./p.html">Explore the source</a> · <a href="./profile/README.md">GitHub profile README template</a></p>
+</div>
 
-A single-page personal developer portfolio by **Toufiqul Islam**, built using HTML and CSS.
+---
 
 ## Overview
 
-This repository contains a portfolio page with an introduction, skills, project highlights, profile links and a contact section.
+This repository contains a responsive personal portfolio page featuring an introduction, skill highlights, project summaries, profile links and a contact section.
 
-## Built with
+## Tech stack
 
-- HTML5
-- CSS3 (including responsive layouts)
-- Google Fonts
+`HTML5` · `CSS3` · `Google Fonts`
 
-## Preview locally
+## Run locally
 
-1. Clone the repository.
-2. Open `p.html` in a web browser.
+1. Clone or download this repository.
+2. Open `p.html` in your browser.
 
-Alternatively, from the project folder:
+For local hosting:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000/p.html`.
+Visit `http://localhost:8000/p.html`.
 
-## Repository files
+## Structure
 
-| File | Purpose |
-| --- | --- |
-| `p.html` | Single-page portfolio and styling |
-| `ovi.jpg` | Portfolio image asset |
+```text
+portfolio-1/
+├── assets/github-banner.svg   # Reusable profile/portfolio banner
+├── profile/README.md          # GitHub profile template
+├── ovi.jpg                    # Portfolio portrait
+└── p.html                     # Website
+```
 
-## Next improvements
+## Improvements planned
 
-- Keep skills and project links aligned with completed work.
-- Add keyboard accessibility checks and improve mobile usability.
-- Publish a live demo using GitHub Pages.
-- Document future changes and add preview screenshots.
+- Improve keyboard accessibility and mobile navigation
+- Publish a live demo with GitHub Pages
+- Add screenshots and update project links
 
-## Author
+### Author
 
-**Toufiqul Islam** — [GitHub profile](https://github.com/Toufiqul-27)
+**Toufiqul Islam** · [GitHub](https://github.com/Toufiqul-27)
