@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0e13" />
+  <meta name="description" content="Toufiqul Islam — an aspiring software engineer exploring backend systems, full-stack development, and open source. Selected projects and engineering journey." />
+  <meta property="og:title" content="Toufiqul Islam — Software Engineering Portfolio" />
+  <meta property="og:description" content="Thoughtful engineering. Useful products. Explore my projects and open-source work." />
+  <meta property="og:type" content="website" />
+  <title>Toufiqul Islam — Software Engineer Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+  <div class="cursor-ambient" id="cursorAmbient" aria-hidden="true"></div>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a href="#top" class="brand" aria-label="Toufiqul Islam — back to top">
+        <span class="brand-icon">t<span class="brand-dot">.</span>i</span>
+        <span class="brand-text">TOUFIQUL<br>ISLAM<span class="brand-star"> ✳</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#work" class="nav-link">Work <span>01</span></a>
+        <a href="#expertise" class="nav-link">Expertise <span>02</span></a>
+        <a href="#about" class="nav-link">About <span>03</span></a>
+        <a href="#contact" class="nav-link">Contact <span>04</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.1A8.5 8.5 0 0 1 9.9 3.4 8.7 8.7 0 1 0 20.6 14.1Z"/></svg></button>
+        <a class="header-cta" href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <button class="mobile-menu" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> AN ENGINEER IN THE MAKING <span class="eyebrow-separator">/</span> BASED IN BANGLADESH</div>
+          <h1 id="heroTitle">Building the<br><span class="hero-outline">logic</span> behind<br><span class="hero-italic">what's next<span class="period">.</span></span></h1>
+          <p class="hero-intro">Hey, I'm <strong>Toufiqul Islam.</strong> I build and learn through real software projects — from TypeScript APIs and React dashboards to Java applications and open-source testing.</p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer" class="btn btn-text">View GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract visualization of backend services connected through a central system" role="img">
+          <div class="art-grid"></div>
+          <div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div>
+          <div class="orbit-mark orbit-mark-1"></div><div class="orbit-mark orbit-mark-2"></div><div class="orbit-mark orbit-mark-3"></div>
+          <div class="art-node node-api"><span>01 / API LAYER</span><strong>{ ... }</strong><small>request → response</small></div>
+          <div class="art-node node-data"><span>02 / DATA</span><svg viewBox="0 0 64 45" aria-hidden="true"><ellipse cx="32" cy="8" rx="23" ry="7"/><path d="M9 8v28c0 4 10 7 23 7s23-3 23-7V8M9 22c0 4 10 7 23 7s23-3 23-7"/></svg><small>postgres / sql</small></div>
+          <div class="art-node node-system"><span>03 / SYSTEM</span><strong>100<span class="unit">%</span></strong><small>in sync<span class="mini-pulse"></span></small></div>
+          <div class="core-glow"></div>
+          <div class="art-core"><div class="core-face"><div class="core-topline"><span class="tiny-light"></span><span class="tiny-light"></span><span class="tiny-light"></span></div><div class="core-glyph">&lt;/&gt;</div><div class="core-bottom">ENGINEERING<br><strong>WITH INTENTION</strong></div></div></div>
+          <div class="art-caption"><span>FIG 01 — SYSTEMS THINKING</span><span>BUILD / CONNECT / IMPROVE</span></div>
+        </div>
+        <div class="hero-bottom"><span><span class="hero-spark">✳</span> OPEN TO INTERNSHIPS &amp; COLLABORATION</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <div class="ticker" aria-label="Focus areas"><div class="ticker-content" aria-hidden="true"><span>BACKEND ENGINEERING <b>✳</b> FULL-STACK DEVELOPMENT <b>✳</b> PROBLEM SOLVING <b>✳</b> OPEN SOURCE <b>✳</b> BACKEND ENGINEERING <b>✳</b> FULL-STACK DEVELOPMENT <b>✳</b> PROBLEM SOLVING <b>✳</b> OPEN SOURCE <b>✳</b></span></div></div>
+
+      <section id="work" class="work-section section-pad" aria-labelledby="workTitle">
+        <div class="section-heading reveal"><div><p class="section-kicker"><span class="kicker-number">01</span> / SELECTED WORK</p><h2 id="workTitle">Ideas put<br><em>into motion.</em></h2></div><p>Source-backed full-stack and backend projects, student applications, and a real open-source pull request — an honest engineering journey.</p></div>
+        <div class="projects-grid">
+          
+          <!-- Real repository-backed full-stack and backend projects -->
+          <article class="project-card project-apply reveal">
+            <div class="project-visual apply-visual" aria-label="Illustrative design concept for the ApplyTrack project">
+              <div class="visual-watermark">FULL STACK / 01</div>
+              <div class="mock-window apply-window">
+                <div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>APPLYTRACK / DASHBOARD</b><small>↗</small></div>
+                <div class="mock-area">
+                  <div class="mock-heading"><span>Application pipeline</span><span class="mock-add">+ New application</span></div>
+                  <div class="mock-stats"><span>APPLIED<strong>Portfolio</strong></span><span>INTERVIEWS<strong>In progress</strong></span><span>OFFERS<strong>Milestones</strong></span></div>
+                  <div class="mock-columns"><div><small>TO APPLY</small><i></i><i class="short"></i></div><div><small>APPLIED</small><i></i><i></i></div><div><small>INTERVIEW</small><i></i><i class="short"></i></div></div>
+                </div>
+              </div>
+              <span class="visual-label">INTERFACE STUDY / NOT A LIVE DEMO</span>
+            </div>
+            <div class="project-info"><div class="project-topline"><span>FULL-STACK / 001</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div>
+              <h3>ApplyTrack<span>.</span></h3>
+              <p>A job application manager with account authentication, a PostgreSQL-backed API, personal pipelines, search, and status tracking. Source and tests are published; deployment is pending.</p>
+              <div class="project-footer"><div class="project-tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span></div><a href="https://github.com/Toufiqul-27/applytrack-fullstack" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View ApplyTrack source on GitHub">↗</a></div>
+            </div>
+          </article>
+          <article class="project-card project-task reveal delay-1">
+            <div class="project-visual task-visual" aria-label="Illustrative REST API code terminal for TaskFlow">
+              <div class="visual-watermark">BACKEND / 02</div>
+              <div class="mock-window api-window"><div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>taskflow / api</b><small>200 OK</small></div>
+                <div class="api-content"><span class="api-comment">// authenticated, owner-scoped tasks</span><div class="api-route"><b>POST</b> /api/tasks <em>JWT</em></div><pre>{
+  <span>"title"</span>: "Build reliable APIs",
+  <span>"status"</span>: "TODO",
+  <span>"priority"</span>: "HIGH"
+}</pre><div class="api-sep"></div><div class="api-line"><span>AUTH</span><b>JWT + bcrypt</b></div><div class="api-line"><span>DATA</span><b>Prisma + PostgreSQL</b></div><div class="api-line"><span>TESTS</span><b>Vitest + CI</b></div></div>
+              </div><span class="visual-label">API ARCHITECTURE / SOURCE PROJECT</span>
+            </div>
+            <div class="project-info"><div class="project-topline"><span>BACKEND / 002</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div>
+              <h3>TaskFlow <span>API.</span></h3><p>A TypeScript REST API with task ownership, JWT authentication, Zod validation, Prisma models, pagination, and documented endpoints. Built for local development.</p>
+              <div class="project-footer"><div class="project-tags"><span>Express</span><span>Prisma</span><span>JWT</span><span>PostgreSQL</span></div><a href="https://github.com/Toufiqul-27/taskflow-api" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View TaskFlow API source on GitHub">↗</a></div>
+            </div>
+          </article>
+          <article class="project-card project-insights reveal">
+            <div class="project-visual insights-visual" aria-label="Illustrative GitHub Insights dashboard visual">
+              <div class="visual-watermark">REACT / 03</div><div class="mock-window insights-window"><div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>GITHUB / INSIGHTS</b><small>REST API</small></div>
+                <div class="insights-area"><div class="insights-search">github.com / <b>Toufiqul-27</b><span>⌕</span></div><div class="insights-profile"><div class="insights-avatar">TI</div><div><b>Repository explorer</b><small>search • sort • filter</small></div><span class="insights-pill">public data</span></div><div class="insights-bars"><span style="--bar:76%"><em>TypeScript</em><i></i></span><span style="--bar:56%"><em>Java</em><i></i></span><span style="--bar:42%"><em>C++</em><i></i></span><span style="--bar:28%"><em>Python</em><i></i></span></div></div>
+              </div><span class="visual-label">DESIGN PREVIEW / DYNAMIC DATA IN APP</span>
+            </div>
+            <div class="project-info"><div class="project-topline"><span>FRONTEND / 003</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div><h3>GitHub <span>Insights.</span></h3><p>A responsive GitHub profile and repository explorer with search, filtering, sorting, language breakdowns, loading states, and API rate-limit handling.</p><div class="project-footer"><div class="project-tags"><span>React</span><span>TypeScript</span><span>REST API</span><span>Vitest</span></div><a href="https://github.com/Toufiqul-27/github-insights-dashboard" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View GitHub Insights source on GitHub">↗</a></div></div>
+          </article>
+          <article class="project-card project-agro reveal">
+            <div class="project-visual agro-visual" aria-hidden="true">
+              <div class="agro-orb agro-orb-a"></div><div class="agro-orb agro-orb-b"></div>
+              <div class="app-window"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>AGROLINK / DASHBOARD</span><span>⊞</span></div><div class="window-body"><aside><div class="app-logo">A<span>✳</span></div><div class="sidebar-pill active"></div><div class="sidebar-pill"></div><div class="sidebar-pill short"></div><div class="sidebar-bottom"></div></aside><div class="app-content"><span class="app-overline">OVERVIEW / AGRICULTURE</span><strong>Grow together<span>.</span></strong><div class="app-stats"><div><small>ACTIVE LISTINGS</small><b>128</b><i></i></div><div><small>ORDERS IN FLOW</small><b>064</b><i></i></div></div><div class="app-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div>
+              <span class="art-side-note">CONCEPT VISUAL / DESKTOP PROJECT</span>
+            </div>
+            <div class="project-info"><div class="project-topline"><span>JAVA PROJECT / 004</span><span class="project-status"><i></i> STUDENT PROJECT</span></div><h3>AgroLink <span>BD.</span></h3><p>A JavaFX prototype exploring a better way for farmers, buyers, and transport providers to connect through one system.</p><div class="project-footer"><div class="project-tags"><span>JavaFX</span><span>Java</span><span>MySQL</span></div><a href="https://github.com/Toufiqul-27/Agro-Link-java-" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View AgroLink code on GitHub">↗</a></div></div>
+          </article>
+          <article class="project-card project-neo reveal delay-1">
+            <div class="project-visual neo-visual" aria-hidden="true"><div class="neo-bgtext">OPEN<br>SOURCE</div><div class="code-window"><div class="code-top"><span>● &nbsp; ● &nbsp; ●</span> Toast.spec.mjs <span>↗</span></div><div class="code-lines"><p><span class="line-no">01</span> <span class="token-muted">describe</span>(<span class="token-green">'Toast Manager'</span>, () =&gt; {</p><p><span class="line-no">02</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'validates positions'</span>, ...)</p><p><span class="line-no">03</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'handles empty msg'</span>, ...)</p><p><span class="line-no">04</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'checks appName'</span>, ...)</p><p><span class="line-no">05</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'delegates to manager'</span>, ...)</p><p><span class="line-no">06</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'sets defaults'</span>, ...)</p><p><span class="line-no">07</span> });</p></div><div class="code-tests"><span>✓ 5 FOCUSED TESTS PASSED</span><span>PR #20191</span></div></div><div class="neofloat">UNIT TESTS <span>↗</span></div></div>
+            <div class="project-info"><div class="project-topline"><span>OPEN SOURCE / 005</span><span class="project-status"><i class="review-dot"></i> PR SUBMITTED</span></div><h3>Neo.mjs <span>Contribution.</span></h3><p>Contributed five focused Toast Manager unit tests. Pull request submitted for maintainer review, not yet merged.</p><div class="project-footer"><div class="project-tags"><span>JavaScript</span><span>Playwright</span><span>Testing</span></div><a href="https://github.com/neomjs/neo/pull/20191" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View Neo.mjs pull request">↗</a></div></div>
+          </article>
+          <article class="project-card project-mini reveal"><div class="mini-icon">&lt;/&gt;</div><div class="mini-meta">EXPLORATION / 003</div><h3>Java experiments</h3><p>Learning by building — desktop interfaces, object-oriented programming, and application logic.</p><div class="mini-bottom"><span>JAVA · OOP · JAVAFX</span><a href="https://github.com/Toufiqul-27/java" target="_blank" rel="noopener noreferrer" aria-label="View Java experiments">↗</a></div></article>
+          <article class="project-card project-mini mini-contrast reveal delay-1"><div class="mini-icon">ƒ(x)</div><div class="mini-meta">FUNDAMENTALS / 004</div><h3>Problem-solving lab</h3><p>A place to sharpen algorithmic thinking through dynamic programming and C++ problem solving.</p><div class="mini-bottom"><span>C++ · ALGORITHMS · DP</span><a href="https://github.com/Toufiqul-27/DP" target="_blank" rel="noopener noreferrer" aria-label="View dynamic programming repository">↗</a></div></article>
+        </div>
+        <div class="work-end reveal"><span>MORE IN THE MAKING — ONE ITERATION AT A TIME.</span><a href="https://github.com/Toufiqul-27?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section id="expertise" class="expertise-section section-pad" aria-labelledby="expertiseTitle"><div class="section-heading reveal"><div><p class="section-kicker"><span class="kicker-number">02</span> / CAPABILITIES</p><h2 id="expertiseTitle">A foundation for<br><em>what comes next.</em></h2></div><p>Focused on the fundamentals and actively expanding into modern application engineering.</p></div>
+        <div class="skills-grid">
+          <div class="skill-block reveal"><div class="skill-heading"><span class="skill-glyph">{ }</span><span>01 / CURRENT FOCUS</span></div><h3>Backend &amp; systems</h3><p>Building practical REST APIs, authentication flows, database models, and maintainable server-side applications.</p><div class="skill-pills"><span>Node.js</span><span>TypeScript</span><span>SQL</span><span>REST APIs</span></div><span class="skill-accent">↗</span></div>
+          <div class="skill-block reveal delay-1"><div class="skill-heading"><span class="skill-glyph">▧</span><span>02 / BUILDING WITH</span></div><h3>Application development</h3><p>Building responsive React interfaces, interactive dashboards, and Java desktop applications.</p><div class="skill-pills"><span>Java</span><span>JavaFX</span><span>JavaScript</span><span>HTML / CSS</span><span>React</span></div><span class="skill-accent">↗</span></div>
+          <div class="skill-block reveal delay-2"><div class="skill-heading"><span class="skill-glyph">⌘</span><span>03 / FUNDAMENTALS</span></div><h3>Problem solving</h3><p>Algorithms, data structures, and an interest in understanding why a solution works — not just that it works.</p><div class="skill-pills"><span>C++</span><span>DSA</span><span>OOP</span><span>Python</span><span>Git / GitHub</span></div><span class="skill-accent">↗</span></div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section-pad" aria-labelledby="aboutTitle"><div class="about-inner"><div class="about-mark reveal"><span>THINK.</span><span>BUILD.</span><span class="mark-green">REPEAT<span class="mark-period">.</span></span><div class="about-mark-footer">// ENGINEERING IS A PRACTICE</div></div><div class="about-copy reveal delay-1"><p class="section-kicker"><span class="kicker-number">03</span> / A LITTLE ABOUT ME</p><h2 id="aboutTitle">Curious by default.<br><em>Intentional by design.</em></h2><p>I'm a Computer Science &amp; Engineering student from Bangladesh, working toward a career in software engineering. I enjoy the part where problem solving meets actual, useful software.</p><p>My current focus is becoming stronger in backend and full-stack development, while staying curious about AI, cloud technology, and open source.</p><div class="about-points"><div><span>01</span><strong>Learn the fundamentals</strong></div><div><span>02</span><strong>Build useful things</strong></div><div><span>03</span><strong>Improve in public</strong></div></div></div></div></section>
+
+      <section id="contact" class="contact-section section-pad" aria-labelledby="contactTitle"><p class="section-kicker reveal"><span class="kicker-number">04</span> / LET'S CONNECT</p><div class="contact-main reveal"><h2 id="contactTitle">Have an idea?<br><span>Let's build</span><br>something <em>useful.</em></h2><a class="contact-orb" href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on GitHub">↗</a></div><div class="contact-bottom reveal"><div><span class="live-dot"></span> OPEN TO ENTRY-LEVEL ROLES &amp; COLLABORATION</div><a href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer">github.com/Toufiqul-27 <span>↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> TOUFIQUL ISLAM</span><span>DESIGNED TO BE DIFFERENT. BUILT TO KEEP IMPROVING.</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </div>
+</body>
+</html>

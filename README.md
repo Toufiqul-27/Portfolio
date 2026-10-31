@@ -1,49 +1,34 @@
-<div align="center">
-  <img src="./assets/github-banner.svg" alt="Toufiqul Islam — software engineering portfolio" width="100%"/>
-  <h1>Personal Portfolio</h1>
-  <p>A minimal, dark-themed developer portfolio built with HTML and CSS.</p>
-  <p><a href="./p.html">Explore the source</a> · <a href="./profile/README.md">GitHub profile README template</a></p>
-</div>
+# Toufiqul Islam — Developer Portfolio (2026)
 
----
+A custom, responsive developer portfolio featuring **verified GitHub projects** and a genuine open-source pull request. This is an original editorial design, not a copy of a reference website.
 
-## Overview
+## Projects highlighted
 
-This repository contains a responsive personal portfolio page featuring an introduction, skill highlights, project summaries, profile links and a contact section.
+- [ApplyTrack Full-Stack](https://github.com/Toufiqul-27/applytrack-fullstack): React + TypeScript + Express + PostgreSQL.
+- [TaskFlow API](https://github.com/Toufiqul-27/taskflow-api): Authenticated TypeScript REST API using Prisma, JWT and PostgreSQL.
+- [GitHub Insights](https://github.com/Toufiqul-27/github-insights-dashboard): React dashboard using GitHub REST API.
+- [AgroLink BD](https://github.com/Toufiqul-27/Agro-Link-java-): JavaFX + MySQL student application.
+- [Neo.mjs PR #20191](https://github.com/neomjs/neo/pull/20191): Open unit-testing contribution (not merged).
 
-## Tech stack
+Mockups in project cards are illustrative design representations; they are not screenshots of deployed production apps. The listed web apps are **source available**, not represented as live services.
 
-`HTML5` · `CSS3` · `Google Fonts`
+## Tech
 
-## Run locally
+HTML + CSS + JavaScript. Single static site, no npm install or build needed. Responsive, keyboard accessible navigation, dark/light theme switch, reduced-motion preference and SEO metadata.
 
-1. Clone or download this repository.
-2. Open `p.html` in your browser.
+## Deploy free on GitHub Pages
 
-For local hosting:
+1. Add `index.html`, `styles.css`, `script.js`, and `favicon.svg` to the root of the public repository `Toufiqul-27/Portfolio`.
+2. Visit **Settings → Pages → Build and deployment** and select **Deploy from a branch**.
+3. Choose branch **main**, folder **/(root)**, then Save.
+4. The published address will be: `https://toufiqul-27.github.io/Portfolio/`.
 
-```bash
-python -m http.server 8000
-```
+The URL is only considered live once Pages has finished publishing; repository push alone does not guarantee deployment. If GitHub Pages is already configured on main/root, publishing happens automatically after the commit.
 
-Visit `http://localhost:8000/p.html`.
+## Local test
 
-## Structure
+Open `index.html` in a browser or run `python -m http.server 8080` from the folder.
 
-```text
-portfolio-1/
-├── assets/github-banner.svg   # Reusable profile/portfolio banner
-├── profile/README.md          # GitHub profile template
-├── ovi.jpg                    # Portfolio portrait
-└── p.html                     # Website
-```
+## Updating the website
 
-## Improvements planned
-
-- Improve keyboard accessibility and mobile navigation
-- Publish a live demo with GitHub Pages
-- Add screenshots and update project links
-
-### Author
-
-**Toufiqul Islam** · [GitHub](https://github.com/Toufiqul-27)
+Project titles and links are in `index.html`. Design tokens/styles live in `styles.css`, interactions in `script.js`. Never put private tokens/credentials in a static portfolio.
