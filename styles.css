@@ -40,3 +40,12 @@ html.light-theme{--bg:#f2f1eb;--surface:#e8e8e0;--surface-2:#e4e5df;--surface-3:
 @media(max-width:700px){.hero{display:block;min-height:1010px;padding-bottom:115px}.hero-portrait{position:relative;top:auto;right:auto;margin:36px 0 0 auto;width:min(62vw,240px);height:auto;aspect-ratio:.90;opacity:1;transform:none;box-shadow:0 16px 60px rgba(0,0,0,.4)}.hero-portrait:before{inset:8px}.portrait-label{left:22px;bottom:18px}.portrait-label strong{font-size:24px}.portrait-label-overline{font-size:8px}.portrait-label small{font-size:9px}.hero-art{opacity:.16}.hero-bottom{bottom:20px}.header-linkedin{width:33px;height:33px}.contact-socials{gap:16px}}
 @media(max-width:400px){.hero{min-height:1010px}.hero-portrait{margin-top:34px;width:210px}}
 @media(prefers-reduced-motion:reduce){.hero-portrait.visible{animation:none}}
+
+/* Direct contacts — visible, accessible, responsive */
+.contact-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:58px 0 42px}
+.contact-detail{position:relative;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:26px 30px;background:rgba(255,255,255,.025);border:1px solid var(--line);text-decoration:none;overflow-wrap:anywhere;transition:border-color .25s,background .25s,transform .25s}
+.contact-detail:hover,.contact-detail:focus-visible{border-color:var(--accent);background:rgba(200,248,120,.055);transform:translateY(-3px)}
+.contact-detail-label{font:500 10px var(--font-mono);letter-spacing:.14em;color:var(--accent)}
+.contact-detail strong{font-family:var(--font-head);font-weight:600;font-size:clamp(18px,2vw,27px);letter-spacing:-.025em;color:var(--text)}
+.contact-detail-action{font:500 10px var(--font-mono);letter-spacing:.12em;color:var(--text);opacity:.68}
+@media(max-width:700px){.contact-details{grid-template-columns:1fr;gap:12px;margin:35px 0 30px}.contact-detail{padding:22px}.contact-detail strong{font-size:clamp(19px,6vw,26px)}}
