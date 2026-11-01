@@ -1,164 +1,199 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0c0e13" />
-  <meta name="description" content="Toufiqul Islam — a Southeast University CSE undergraduate focused on backend development, full-stack projects, problem solving, and open-source testing." />
-  <meta property="og:title" content="Toufiqul Islam — Software Engineering Portfolio" />
-  <meta property="og:description" content="Thoughtful engineering. Useful products. Explore my projects and open-source work." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/Toufiqul-27/Portfolio/main/portrait-toufiqul.jpg" />
-  <title>Toufiqul Islam — Software Engineer Portfolio</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101413">
+  <meta name="description" content="Toufiqul Islam — aspiring software engineer in Bangladesh. Explore backend, full-stack, JavaFX and open-source projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Toufiqul Islam | Software Engineer Portfolio">
+  <meta property="og:description" content="Building thoughtful software, from backend APIs to full-stack experiences.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Toufiqul-27/Portfolio/main/portrait-toufiqul.jpg">
+  <meta property="og:url" content="https://toufiqul-27.github.io/Portfolio/">
+  <title>Toufiqul Islam — Software Engineer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
-  <div class="cursor-ambient" id="cursorAmbient" aria-hidden="true"></div>
-  <div class="site-shell">
-    <header class="site-header" id="top">
-      <a href="#top" class="brand" aria-label="Toufiqul Islam — back to top">
-        <span class="brand-icon">t<span class="brand-dot">.</span>i</span>
-        <span class="brand-text">TOUFIQUL<br>ISLAM<span class="brand-star"> ✳</span></span>
-      </a>
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <a href="#work" class="nav-link">Work <span>01</span></a>
-        <a href="#expertise" class="nav-link">Expertise <span>02</span></a>
-        <a href="#about" class="nav-link">About <span>03</span></a>
-        <a href="#contact" class="nav-link">Contact <span>04</span></a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="Toufiqul Islam, top of page">toufiqul<span class="wordmark-dot">.</span></a>
+      <nav class="nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Expertise</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <div class="header-actions">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.1A8.5 8.5 0 0 1 9.9 3.4 8.7 8.7 0 1 0 20.6 14.1Z"/></svg></button>
-        <a class="header-linkedin" href="https://www.linkedin.com/in/toufiqul-islam-0624b7402/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">in<span aria-hidden="true">↗</span></a>
-        <a class="header-cta" href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <button class="mobile-menu" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="header-controls">
+        <button class="theme-switch" id="themeSwitch" type="button" title="Toggle theme" aria-label="Toggle light and dark theme"><span aria-hidden="true" class="theme-sun">◐</span></button>
+        <a class="header-contact" href="mailto:toufiqulislam228@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="siteNav" aria-expanded="false"><span></span><span></span></button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero" aria-labelledby="heroTitle">
-        <div class="hero-atmosphere" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="live-dot"></span> AN ENGINEER IN THE MAKING <span class="eyebrow-separator">/</span> BASED IN BANGLADESH</div>
-          <h1 id="heroTitle">Building the<br><span class="hero-outline">logic</span> behind<br><span class="hero-italic">what's next<span class="period">.</span></span></h1>
-          <p class="hero-intro">I'm <strong>Toufiqul Islam</strong>, a Computer Science &amp; Engineering undergraduate at Southeast University. I enjoy building practical software — from Java applications to TypeScript APIs, React dashboards, and open-source tests.</p>
-          <div class="hero-buttons">
-            <a href="#work" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
-            <a href="https://www.linkedin.com/in/toufiqul-islam-0624b7402/" target="_blank" rel="noopener noreferrer" class="btn btn-text">LinkedIn profile <span aria-hidden="true">↗</span></a>
+  <main id="main">
+    <section class="hero section" aria-labelledby="heroHeading">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> OPEN TO ENTRY-LEVEL OPPORTUNITIES <span class="eyebrow-rule"></span> BANGLADESH</p>
+          <h1 id="heroHeading">Thoughtful code.<br><em>Useful</em> things.</h1>
+          <p class="hero-description">Hi, I'm <strong>Toufiqul Islam</strong> — a CSE undergraduate at Southeast University exploring backend engineering, full-stack development, and the craft of building dependable software.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote">
+            <span class="footnote-line"></span>
+            <span>SOFTWARE DEVELOPMENT <i>/</i> BACKEND <i>/</i> PROBLEM SOLVING</span>
           </div>
         </div>
-        <div class="hero-art" aria-label="Abstract visualization of backend services connected through a central system" role="img">
-          <div class="art-grid"></div>
-          <div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div>
-          <div class="orbit-mark orbit-mark-1"></div><div class="orbit-mark orbit-mark-2"></div><div class="orbit-mark orbit-mark-3"></div>
-          <div class="art-node node-api"><span>01 / API LAYER</span><strong>{ ... }</strong><small>request → response</small></div>
-          <div class="art-node node-data"><span>02 / DATA</span><svg viewBox="0 0 64 45" aria-hidden="true"><ellipse cx="32" cy="8" rx="23" ry="7"/><path d="M9 8v28c0 4 10 7 23 7s23-3 23-7V8M9 22c0 4 10 7 23 7s23-3 23-7"/></svg><small>postgres / sql</small></div>
-          <div class="art-node node-system"><span>03 / SYSTEM</span><strong>100<span class="unit">%</span></strong><small>in sync<span class="mini-pulse"></span></small></div>
-          <div class="core-glow"></div>
-          <div class="art-core"><div class="core-face"><div class="core-topline"><span class="tiny-light"></span><span class="tiny-light"></span><span class="tiny-light"></span></div><div class="core-glyph">&lt;/&gt;</div><div class="core-bottom">ENGINEERING<br><strong>WITH INTENTION</strong></div></div></div>
-          <div class="art-caption"><span>FIG 01 — SYSTEMS THINKING</span><span>BUILD / CONNECT / IMPROVE</span></div>
+        <div class="hero-media reveal" aria-label="Portrait of Toufiqul Islam">
+          <div class="portrait-frame">
+            <img src="./portrait-toufiqul.jpg" width="400" height="400" alt="Black-and-white professional portrait of Toufiqul Islam" fetchpriority="high">
+            <div class="portrait-bottom"><span>TOUFIQUL ISLAM</span><span>01 / PROFILE</span></div>
+          </div>
+          <div class="portrait-side-label" aria-hidden="true">BUILD · LEARN · IMPROVE</div>
+          <span class="portrait-accent" aria-hidden="true"></span>
         </div>
-        <div class="hero-portrait reveal" aria-label="Photograph of Toufiqul Islam">
-          <div class="portrait-corner portrait-corner-tl" aria-hidden="true"></div>
-          <img src="portrait-toufiqul.jpg" width="400" height="400" alt="Black-and-white portrait of Toufiqul Islam in formal attire" fetchpriority="high" />
-          <div class="portrait-fade" aria-hidden="true"></div>
-          <div class="portrait-label"><span class="portrait-label-overline">BEHIND THE CODE / 001</span><strong>Toufiqul Islam<span>.</span></strong><small>CSE · Software engineering</small></div>
-          <div class="portrait-corner portrait-corner-br" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-divider">
+        <div class="hero-divider-label"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></div>
+        <div class="hero-divider-index">PORTFOLIO / 2026</div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="workHeading">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div class="section-intro-left">
+            <p class="eyebrow section-number">01 / SELECTED PROJECTS</p>
+            <h2 id="workHeading">Work worth<br><em>exploring.</em></h2>
+          </div>
+          <p class="section-intro-copy">A curated collection of real repositories — practical applications, backend experiments, and open-source learning. No invented demos or metrics.</p>
         </div>
-        <div class="hero-bottom"><span><span class="hero-spark">✳</span> OPEN TO INTERNSHIPS &amp; ENTRY-LEVEL OPPORTUNITIES</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
-      </section>
 
-      <div class="ticker" aria-label="Focus areas"><div class="ticker-content" aria-hidden="true"><span>BACKEND ENGINEERING <b>✳</b> FULL-STACK DEVELOPMENT <b>✳</b> PROBLEM SOLVING <b>✳</b> OPEN SOURCE <b>✳</b> BACKEND ENGINEERING <b>✳</b> FULL-STACK DEVELOPMENT <b>✳</b> PROBLEM SOLVING <b>✳</b> OPEN SOURCE <b>✳</b></span></div></div>
-
-      <section id="work" class="work-section section-pad" aria-labelledby="workTitle">
-        <div class="section-heading reveal"><div><p class="section-kicker"><span class="kicker-number">01</span> / SELECTED WORK</p><h2 id="workTitle">Ideas put<br><em>into motion.</em></h2></div><p>Source-backed full-stack and backend projects, student applications, and a real open-source pull request — an honest engineering journey.</p></div>
-        <div class="projects-grid">
-          
-          <!-- Real repository-backed full-stack and backend projects -->
-          <article class="project-card project-apply reveal">
-            <div class="project-visual apply-visual" aria-label="Illustrative design concept for the ApplyTrack project">
-              <div class="visual-watermark">FULL STACK / 01</div>
-              <div class="mock-window apply-window">
-                <div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>APPLYTRACK / DASHBOARD</b><small>↗</small></div>
-                <div class="mock-area">
-                  <div class="mock-heading"><span>Application pipeline</span><span class="mock-add">+ New application</span></div>
-                  <div class="mock-stats"><span>APPLIED<strong>Portfolio</strong></span><span>INTERVIEWS<strong>In progress</strong></span><span>OFFERS<strong>Milestones</strong></span></div>
-                  <div class="mock-columns"><div><small>TO APPLY</small><i></i><i class="short"></i></div><div><small>APPLIED</small><i></i><i></i></div><div><small>INTERVIEW</small><i></i><i class="short"></i></div></div>
-                </div>
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual visual-apply" aria-label="Abstract illustration of a job application dashboard">
+              <div class="visual-topline"><span>01 — FULL STACK</span><span class="visual-symbol">↗</span></div>
+              <div class="interface-preview">
+                <div class="preview-header"><span class="preview-logo">a<span>.</span></span><span>OVERVIEW</span><span class="preview-pill"></span></div>
+                <div class="preview-title"></div>
+                <div class="preview-subtitle"></div>
+                <div class="preview-grid"><span></span><span></span><span></span></div>
+                <div class="preview-rows"><span></span><span></span><span></span></div>
               </div>
-              <span class="visual-label">INTERFACE STUDY / NOT A LIVE DEMO</span>
+              <span class="visual-caption">ILLUSTRATIVE UI · SOURCE AVAILABLE</span>
             </div>
-            <div class="project-info"><div class="project-topline"><span>FULL-STACK / 001</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div>
-              <h3>ApplyTrack<span>.</span></h3>
-              <p>A job application manager with account authentication, a PostgreSQL-backed API, personal pipelines, search, and status tracking. Source and tests are published; deployment is pending.</p>
-              <div class="project-footer"><div class="project-tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span></div><a href="https://github.com/Toufiqul-27/applytrack-fullstack" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View ApplyTrack source on GitHub">↗</a></div>
-            </div>
-          </article>
-          <article class="project-card project-task reveal delay-1">
-            <div class="project-visual task-visual" aria-label="Illustrative REST API code terminal for TaskFlow">
-              <div class="visual-watermark">BACKEND / 02</div>
-              <div class="mock-window api-window"><div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>taskflow / api</b><small>200 OK</small></div>
-                <div class="api-content"><span class="api-comment">// authenticated, owner-scoped tasks</span><div class="api-route"><b>POST</b> /api/tasks <em>JWT</em></div><pre>{
-  <span>"title"</span>: "Build reliable APIs",
-  <span>"status"</span>: "TODO",
-  <span>"priority"</span>: "HIGH"
-}</pre><div class="api-sep"></div><div class="api-line"><span>AUTH</span><b>JWT + bcrypt</b></div><div class="api-line"><span>DATA</span><b>Prisma + PostgreSQL</b></div><div class="api-line"><span>TESTS</span><b>Vitest + CI</b></div></div>
-              </div><span class="visual-label">API ARCHITECTURE / SOURCE PROJECT</span>
-            </div>
-            <div class="project-info"><div class="project-topline"><span>BACKEND / 002</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div>
-              <h3>TaskFlow <span>API.</span></h3><p>A TypeScript REST API with task ownership, JWT authentication, Zod validation, Prisma models, pagination, and documented endpoints. Built for local development.</p>
-              <div class="project-footer"><div class="project-tags"><span>Express</span><span>Prisma</span><span>JWT</span><span>PostgreSQL</span></div><a href="https://github.com/Toufiqul-27/taskflow-api" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View TaskFlow API source on GitHub">↗</a></div>
+            <div class="project-content">
+              <div class="project-meta"><span>01 / FULL-STACK APPLICATION</span><span class="meta-chip">SOURCE AVAILABLE</span></div>
+              <h3>ApplyTrack <span class="title-arrow" aria-hidden="true">↗</span></h3>
+              <p>A personal job application tracker with account authentication, pipeline statuses, search, and a PostgreSQL-backed API. Built to practice end-to-end development.</p>
+              <div class="feature-list"><span>React &amp; TypeScript</span><span>Node.js / Express</span><span>PostgreSQL</span><span>JWT Auth</span></div>
+              <a class="project-link" href="https://github.com/Toufiqul-27/applytrack-fullstack" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
             </div>
           </article>
-          <article class="project-card project-insights reveal">
-            <div class="project-visual insights-visual" aria-label="Illustrative GitHub Insights dashboard visual">
-              <div class="visual-watermark">REACT / 03</div><div class="mock-window insights-window"><div class="mock-top"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><b>GITHUB / INSIGHTS</b><small>REST API</small></div>
-                <div class="insights-area"><div class="insights-search">github.com / <b>Toufiqul-27</b><span>⌕</span></div><div class="insights-profile"><div class="insights-avatar">TI</div><div><b>Repository explorer</b><small>search • sort • filter</small></div><span class="insights-pill">public data</span></div><div class="insights-bars"><span style="--bar:76%"><em>TypeScript</em><i></i></span><span style="--bar:56%"><em>Java</em><i></i></span><span style="--bar:42%"><em>C++</em><i></i></span><span style="--bar:28%"><em>Python</em><i></i></span></div></div>
-              </div><span class="visual-label">DESIGN PREVIEW / DYNAMIC DATA IN APP</span>
-            </div>
-            <div class="project-info"><div class="project-topline"><span>FRONTEND / 003</span><span class="project-status"><i></i> SOURCE AVAILABLE</span></div><h3>GitHub <span>Insights.</span></h3><p>A responsive GitHub profile and repository explorer with search, filtering, sorting, language breakdowns, loading states, and API rate-limit handling.</p><div class="project-footer"><div class="project-tags"><span>React</span><span>TypeScript</span><span>REST API</span><span>Vitest</span></div><a href="https://github.com/Toufiqul-27/github-insights-dashboard" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View GitHub Insights source on GitHub">↗</a></div></div>
-          </article>
-          <article class="project-card project-agro reveal">
-            <div class="project-visual agro-visual" aria-hidden="true">
-              <div class="agro-orb agro-orb-a"></div><div class="agro-orb agro-orb-b"></div>
-              <div class="app-window"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>AGROLINK / DASHBOARD</span><span>⊞</span></div><div class="window-body"><aside><div class="app-logo">A<span>✳</span></div><div class="sidebar-pill active"></div><div class="sidebar-pill"></div><div class="sidebar-pill short"></div><div class="sidebar-bottom"></div></aside><div class="app-content"><span class="app-overline">OVERVIEW / AGRICULTURE</span><strong>Grow together<span>.</span></strong><div class="app-stats"><div><small>ACTIVE LISTINGS</small><b>128</b><i></i></div><div><small>ORDERS IN FLOW</small><b>064</b><i></i></div></div><div class="app-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div>
-              <span class="art-side-note">CONCEPT VISUAL / DESKTOP PROJECT</span>
-            </div>
-            <div class="project-info"><div class="project-topline"><span>JAVA PROJECT / 004</span><span class="project-status"><i></i> STUDENT PROJECT</span></div><h3>AgroLink <span>BD.</span></h3><p>A JavaFX prototype exploring a better way for farmers, buyers, and transport providers to connect through one system.</p><div class="project-footer"><div class="project-tags"><span>JavaFX</span><span>Java</span><span>MySQL</span></div><a href="https://github.com/Toufiqul-27/Agro-Link-java-" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View AgroLink code on GitHub">↗</a></div></div>
-          </article>
-          <article class="project-card project-neo reveal delay-1">
-            <div class="project-visual neo-visual" aria-hidden="true"><div class="neo-bgtext">OPEN<br>SOURCE</div><div class="code-window"><div class="code-top"><span>● &nbsp; ● &nbsp; ●</span> Toast.spec.mjs <span>↗</span></div><div class="code-lines"><p><span class="line-no">01</span> <span class="token-muted">describe</span>(<span class="token-green">'Toast Manager'</span>, () =&gt; {</p><p><span class="line-no">02</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'validates positions'</span>, ...)</p><p><span class="line-no">03</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'handles empty msg'</span>, ...)</p><p><span class="line-no">04</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'checks appName'</span>, ...)</p><p><span class="line-no">05</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'delegates to manager'</span>, ...)</p><p><span class="line-no">06</span> &nbsp;&nbsp;<span class="token-muted">it</span>(<span class="token-green">'sets defaults'</span>, ...)</p><p><span class="line-no">07</span> });</p></div><div class="code-tests"><span>✓ 5 FOCUSED TESTS PASSED</span><span>PR #20191</span></div></div><div class="neofloat">UNIT TESTS <span>↗</span></div></div>
-            <div class="project-info"><div class="project-topline"><span>OPEN SOURCE / 005</span><span class="project-status"><i class="review-dot"></i> PR SUBMITTED</span></div><h3>Neo.mjs <span>Contribution.</span></h3><p>Contributed five focused Toast Manager unit tests. Pull request submitted for maintainer review, not yet merged.</p><div class="project-footer"><div class="project-tags"><span>JavaScript</span><span>Playwright</span><span>Testing</span></div><a href="https://github.com/neomjs/neo/pull/20191" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="View Neo.mjs pull request">↗</a></div></div>
-          </article>
-          <article class="project-card project-mini reveal"><div class="mini-icon">&lt;/&gt;</div><div class="mini-meta">EXPLORATION / 006</div><h3>Java experiments</h3><p>Learning by building — desktop interfaces, object-oriented programming, and application logic.</p><div class="mini-bottom"><span>JAVA · OOP · JAVAFX</span><a href="https://github.com/Toufiqul-27/java" target="_blank" rel="noopener noreferrer" aria-label="View Java experiments">↗</a></div></article>
-          <article class="project-card project-mini mini-contrast reveal delay-1"><div class="mini-icon">ƒ(x)</div><div class="mini-meta">FUNDAMENTALS / 007</div><h3>Problem-solving lab</h3><p>A place to sharpen algorithmic thinking through dynamic programming and C++ problem solving.</p><div class="mini-bottom"><span>C++ · ALGORITHMS · DP</span><a href="https://github.com/Toufiqul-27/DP" target="_blank" rel="noopener noreferrer" aria-label="View dynamic programming repository">↗</a></div></article>
-        </div>
-        <div class="work-end reveal"><span>MORE IN THE MAKING — ONE ITERATION AT A TIME.</span><a href="https://github.com/Toufiqul-27?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span></a></div>
-      </section>
 
-      <section id="expertise" class="expertise-section section-pad" aria-labelledby="expertiseTitle"><div class="section-heading reveal"><div><p class="section-kicker"><span class="kicker-number">02</span> / CAPABILITIES</p><h2 id="expertiseTitle">A foundation for<br><em>what comes next.</em></h2></div><p>Focused on the fundamentals and actively expanding into modern application engineering.</p></div>
+          <article class="project-card reveal">
+            <div class="project-visual visual-api" aria-label="Abstract code architecture illustration">
+              <div class="visual-topline"><span>02 — BACKEND</span><span class="visual-symbol">{ }</span></div>
+              <div class="api-diagram" aria-hidden="true">
+                <div class="api-endpoint"><span class="api-method">POST</span><span>/api/auth/login</span><b>200</b></div>
+                <div class="api-endpoint"><span class="api-method api-method-get">GET</span><span>/api/tasks</span><b>200</b></div>
+                <div class="api-endpoint"><span class="api-method api-method-patch">PATCH</span><span>/api/tasks/:id</span><b>200</b></div>
+                <div class="api-stroke"></div>
+                <div class="api-footer"><span>VALIDATION</span><span>AUTH</span><span>DATABASE</span></div>
+              </div>
+              <span class="visual-caption">ENDPOINT CONCEPT · SOURCE AVAILABLE</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>02 / BACKEND ENGINEERING</span><span class="meta-chip">SOURCE AVAILABLE</span></div>
+              <h3>TaskFlow API <span class="title-arrow" aria-hidden="true">↗</span></h3>
+              <p>A TypeScript REST API for managing personal tasks with owner-scoped access, JWT authentication, schema validation, and pagination.</p>
+              <div class="feature-list"><span>TypeScript</span><span>Express</span><span>Prisma</span><span>PostgreSQL</span></div>
+              <a class="project-link" href="https://github.com/Toufiqul-27/taskflow-api" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-github" aria-label="Minimal graphic of repository insights">
+              <div class="visual-topline"><span>03 — FRONTEND</span><span class="visual-symbol">◇</span></div>
+              <div class="insight-preview" aria-hidden="true">
+                <div class="insight-head"><span class="insight-circle"></span><span class="insight-heading-lines"><i></i><i></i></span></div>
+                <div class="insight-rule"></div>
+                <div class="insight-bars"><span style="--bar-height:64%"></span><span style="--bar-height:88%"></span><span style="--bar-height:54%"></span><span style="--bar-height:76%"></span><span style="--bar-height:42%"></span><span style="--bar-height:95%"></span><span style="--bar-height:67%"></span></div>
+              </div>
+              <span class="visual-caption">GRAPHIC STUDY · NOT LIVE ANALYTICS</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>03 / REACT FRONTEND</span><span class="meta-chip">SOURCE AVAILABLE</span></div>
+              <h3>GitHub Insights <span class="title-arrow" aria-hidden="true">↗</span></h3>
+              <p>A responsive explorer for public GitHub profiles with repository search, sorting, language summaries, and GitHub API error states.</p>
+              <div class="feature-list"><span>React</span><span>TypeScript</span><span>GitHub REST API</span><span>Vitest</span></div>
+              <a class="project-link" href="https://github.com/Toufiqul-27/github-insights-dashboard" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work reveal">
+          <div class="more-work-heading"><p class="eyebrow">ALSO IN THE WORKSHOP</p><h3>More experiments &amp; contributions</h3></div>
+          <div class="more-work-grid">
+            <a href="https://github.com/Toufiqul-27/Agro-Link-java-" target="_blank" rel="noopener noreferrer" class="mini-project"><span class="mini-project-index">04 / JAVA DESKTOP</span><strong>AgroLink BD</strong><span>JavaFX agriculture &amp; shared transport student project</span><span class="mini-project-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/neomjs/neo/pull/20191" target="_blank" rel="noopener noreferrer" class="mini-project"><span class="mini-project-index">05 / OPEN SOURCE</span><strong>Neo.mjs unit tests</strong><span>PR #20191 submitted for review · not yet merged</span><span class="mini-project-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <a href="https://github.com/Toufiqul-27?tab=repositories" target="_blank" rel="noopener noreferrer" class="inline-link">All GitHub repositories <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="aboutHeading">
+      <div class="container about-layout">
+        <div class="about-heading reveal"><p class="eyebrow section-number">02 / THE PERSON BEHIND THE CODE</p><h2 id="aboutHeading">Curiosity is<br>my <em>starting point.</em></h2></div>
+        <div class="about-copy reveal">
+          <p class="about-lead">I like understanding how things work — then building something useful with what I learn.</p>
+          <p>I'm pursuing a BSc in Computer Science &amp; Engineering at <strong>Southeast University</strong>, Bangladesh. I work with C++, Java, JavaScript, Python, and SQL, and I'm growing my experience with React and backend APIs.</p>
+          <p>From JavaFX desktop applications to authentication and database-backed web services, I'm focused on solid fundamentals, thoughtful implementation, and learning through iteration.</p>
+          <div class="about-facts">
+            <div><span>EDUCATION</span><strong>BSc in CSE · Southeast University</strong><small>2023 — Present</small></div>
+            <div><span>INTERESTS</span><strong>Backend · Full-stack · Applied AI</strong><small>Software engineering &amp; problem solving</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skillsHeading">
+      <div class="container">
+        <div class="section-intro skills-intro reveal">
+          <div class="section-intro-left"><p class="eyebrow section-number">03 / TOOLKIT</p><h2 id="skillsHeading">An evolving<br><em>skill set.</em></h2></div>
+          <p class="section-intro-copy">A practical toolkit built through coursework, personal projects, and continuous learning — with room to keep improving.</p>
+        </div>
         <div class="skills-grid">
-          <div class="skill-block reveal"><div class="skill-heading"><span class="skill-glyph">{ }</span><span>01 / CURRENT FOCUS</span></div><h3>Backend &amp; systems</h3><p>Building practical REST APIs, authentication flows, database models, and maintainable server-side applications.</p><div class="skill-pills"><span>Node.js</span><span>TypeScript</span><span>SQL</span><span>REST APIs</span></div><span class="skill-accent">↗</span></div>
-          <div class="skill-block reveal delay-1"><div class="skill-heading"><span class="skill-glyph">▧</span><span>02 / BUILDING WITH</span></div><h3>Application development</h3><p>Building responsive React interfaces, interactive dashboards, and Java desktop applications.</p><div class="skill-pills"><span>Java</span><span>JavaFX</span><span>JavaScript</span><span>HTML / CSS</span><span>React</span></div><span class="skill-accent">↗</span></div>
-          <div class="skill-block reveal delay-2"><div class="skill-heading"><span class="skill-glyph">⌘</span><span>03 / FUNDAMENTALS</span></div><h3>Problem solving</h3><p>Algorithms, data structures, and an interest in understanding why a solution works — not just that it works.</p><div class="skill-pills"><span>C++</span><span>DSA</span><span>OOP</span><span>Python</span><span>Git / GitHub</span></div><span class="skill-accent">↗</span></div>
+          <div class="skill-column reveal"><span class="skill-number">01</span><h3>Languages &amp; fundamentals</h3><p>C++ · Java · JavaScript · Python · SQL</p><p>Data structures &amp; algorithms · OOP</p></div>
+          <div class="skill-column reveal"><span class="skill-number">02</span><h3>Web &amp; backend</h3><p>React · TypeScript · Node.js · Express</p><p>REST APIs · JWT · Prisma · PostgreSQL</p></div>
+          <div class="skill-column reveal"><span class="skill-number">03</span><h3>Tools &amp; development</h3><p>Git · GitHub · JavaFX · MySQL</p><p>Docker basics · Testing · Linux</p></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="about" class="about-section section-pad" aria-labelledby="aboutTitle"><div class="about-inner"><div class="about-mark reveal"><span>THINK.</span><span>BUILD.</span><span class="mark-green">REPEAT<span class="mark-period">.</span></span><div class="about-mark-footer">// ENGINEERING IS A PRACTICE</div></div><div class="about-copy reveal delay-1"><p class="section-kicker"><span class="kicker-number">03</span> / A LITTLE ABOUT ME</p><h2 id="aboutTitle">Curious by default.<br><em>Intentional by design.</em></h2><p>I'm a BSc in Computer Science &amp; Engineering undergraduate at <strong>Southeast University</strong> (2023–present), based in Bangladesh. I like solving algorithms in C++ and translating those ideas into applications that people can use.</p><p>My work includes <strong>AgroLink BD</strong> (a JavaFX agriculture and shared-transport student project), Java inventory applications, and newer TypeScript backend and full-stack learning builds. I’m focused on backend engineering while exploring AI and cloud foundations.</p><div class="about-points"><div><span>01</span><strong>Learn the fundamentals</strong></div><div><span>02</span><strong>Build useful things</strong></div><div><span>03</span><strong>Improve in public</strong></div></div><div class="about-credentials"><span>EDUCATION / SOUTHEAST UNIVERSITY · BSc IN CSE</span><a href="https://codeforces.com/profile/toufiqulislam228" target="_blank" rel="noopener noreferrer">Codeforces problem solving ↗</a></div></div></div></section>
-
-      <section id="contact" class="contact-section section-pad" aria-labelledby="contactTitle"><p class="section-kicker reveal"><span class="kicker-number">04</span> / LET'S CONNECT</p><div class="contact-main reveal"><h2 id="contactTitle">Have an idea?<br><span>Let's build</span><br>something <em>useful.</em></h2><a class="contact-orb" href="https://www.linkedin.com/in/toufiqul-islam-0624b7402/" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn">↗</a></div><div class="contact-details reveal" aria-label="Direct contact and competitive programming profile">
-          <a class="contact-detail" href="tel:+8801855617232" aria-label="Call +880 1855 617232"><span class="contact-detail-label">01 / PHONE</span><strong>+880 1855 617232</strong><span class="contact-detail-action">CALL ME ↗</span></a>
-          <a class="contact-detail" href="https://codeforces.com/profile/toufiqulislam228" target="_blank" rel="noopener noreferrer" aria-label="View Codeforces profile toufiqulislam228"><span class="contact-detail-label">02 / CODEFORCES</span><strong>toufiqulislam228</strong><span class="contact-detail-action">VIEW PROFILE ↗</span></a>
+    <section class="section contact-section" id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="contact-header reveal"><p class="eyebrow section-number">04 / CONTACT</p><h2 id="contactHeading">Have something<br>in <em>mind?</em></h2><p>I'm open to entry-level software engineering opportunities, internships, and conversations about interesting projects.</p></div>
+        <a class="email-link reveal" href="mailto:toufiqulislam228@gmail.com"><span>LET'S CONNECT</span><strong>toufiqulislam228@gmail.com</strong><span aria-hidden="true" class="email-arrow">↗</span></a>
+        <div class="contact-list reveal">
+          <a href="tel:+8801855617232"><span>PHONE</span><strong>+880 1855 617232</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/toufiqul-islam-0624b7402/" target="_blank" rel="noopener noreferrer"><span>PROFESSIONAL</span><strong>LinkedIn</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer"><span>CODE</span><strong>GitHub</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://codeforces.com/profile/toufiqulislam228" target="_blank" rel="noopener noreferrer"><span>PROBLEM SOLVING</span><strong>Codeforces</strong><span aria-hidden="true">↗</span></a>
         </div>
-        <div class="contact-bottom reveal"><div><span class="live-dot"></span> OPEN TO ENTRY-LEVEL ROLES &amp; COLLABORATION</div><div class="contact-socials"><a href="https://www.linkedin.com/in/toufiqul-islam-0624b7402/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/Toufiqul-27" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://codeforces.com/profile/toufiqulislam228" target="_blank" rel="noopener noreferrer">Codeforces <span>↗</span></a></div></div></section>
-    </main>
-    <footer class="site-footer"><span>© <span id="year">2026</span> TOUFIQUL ISLAM</span><span>DESIGNED TO BE DIFFERENT. BUILT TO KEEP IMPROVING.</span><a href="#top">BACK TO TOP ↑</a></footer>
-  </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark footer-brand" href="#top">toufiqul<span class="wordmark-dot">.</span></a><span>© <span id="year">2026</span> Toufiqul Islam</span><span>Made with intention, built to grow.</span><a href="#top" class="back-to-top">Back to top ↑</a></div></footer>
 </body>
 </html>
