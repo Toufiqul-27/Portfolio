@@ -27,6 +27,10 @@ python -m http.server 8080
 
 Go to http://localhost:8080/.
 
+## Quality checks
+
+Browser smoke tests cover desktop/mobile navigation, project filtering, expandable details, theme persistence, image loading and horizontal overflow with Playwright. Run `npm install && npm test` (first install Chromium with `npx playwright install chromium`). GitHub Actions runs the same checks on every push.
+
 ## Structure
 
 - \`index.html\` — content, accessible structure, case-study briefs and project links
