@@ -44,7 +44,7 @@ test("theme toggle works and persists across reloads",async({page})=>{
 test("layout does not horizontally overflow and navigation is accessible",async({page,isMobile})=>{
   await page.goto("/");
   if(isMobile){
-    const toggle=page.getByRole("button",{name:"Open navigation"});
+    const toggle=page.locator("#menuToggle");
     await toggle.click();
     await expect(toggle).toHaveAttribute("aria-expanded","true");
     await page.getByRole("navigation",{name:"Primary navigation"}).getByRole("link",{name:"Open source"}).click();
