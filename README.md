@@ -8,7 +8,7 @@ A custom, responsive developer portfolio featuring **verified GitHub projects** 
 - [TaskFlow API](https://github.com/Toufiqul-27/taskflow-api): Authenticated TypeScript REST API using Prisma, JWT and PostgreSQL.
 - [GitHub Insights](https://github.com/Toufiqul-27/github-insights-dashboard): React dashboard using GitHub REST API.
 - [AgroLink BD](https://github.com/Toufiqul-27/Agro-Link-java-): JavaFX + MySQL student application.
-- [Neo.mjs PR #20191](https://github.com/neomjs/neo/pull/20191): Open unit-testing contribution (not merged).
+- [Neo.mjs PR #20191](https://github.com/neomjs/neo/pull/20191): Merged unit-testing contribution.
 
 Mockups in project cards are illustrative design representations; they are not screenshots of deployed production apps. The listed web apps are **source available**, not represented as live services.
 
