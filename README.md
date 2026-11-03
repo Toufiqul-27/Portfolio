@@ -1,43 +1,42 @@
 # Toufiqul Islam — Software Engineering Portfolio
 
-A custom, responsive portfolio built with plain HTML, CSS and JavaScript. The goal is a clean, recruiter-friendly presentation of real student projects and verifiable open-source contributions.
+**Live website:** https://toufiqul-27.github.io/Portfolio/
 
-**Live site:** https://toufiqul-27.github.io/Portfolio/
+A calm, evidence-first personal portfolio for software engineering internships and junior roles. Built with plain HTML, CSS and JavaScript; no framework or build step.
 
-## Highlights
+## Design goals
 
-- Accessible navigation, keyboard focus states, responsive mobile menu
-- Midnight-navy design with subtle violet/cyan accents and an optional light theme
-- Real portrait and carefully curated GitHub repository links
-- Four selected projects: [AgroLink](https://github.com/Toufiqul-27/Agro-Link-java-), [TaskFlow API](https://github.com/Toufiqul-27/taskflow-api), [ApplyTrack](https://github.com/Toufiqul-27/applytrack-fullstack), [GitHub Insights](https://github.com/Toufiqul-27/github-insights-dashboard)
-- Verified merged contributions: [Neo.mjs #20191](https://github.com/neomjs/neo/pull/20191) and [synthdata #7](https://github.com/javvadivijayprasad/synthdata/pull/7)
-- One pending upstream contribution: [regexpp #220](https://github.com/eslint-community/regexpp/pull/220)
+- **Recruiter-first information architecture:** role and interests → selected code → verified collaboration → education and skills → clear contact
+- Restrained navy/violet palette, accessible typography and breathing room
+- Meaningful interactivity: working project filters, native expandable technical briefs, copy-email feedback, light/dark theme and mobile menu
+- Responsive layouts, keyboard navigation, semantic headings, reduced-motion support, accessible labels and focus states
+- Verified upstream contributions: [Neo.mjs PR #20191](https://github.com/neomjs/neo/pull/20191) and [synthdata PR #7](https://github.com/javvadivijayprasad/synthdata/pull/7) (merged); [regexpp PR #220](https://github.com/eslint-community/regexpp/pull/220) (in review when last checked)
+- Four highlighted repositories: [AgroLink](https://github.com/Toufiqul-27/Agro-Link-java-), [TaskFlow API](https://github.com/Toufiqul-27/taskflow-api), [ApplyTrack](https://github.com/Toufiqul-27/applytrack-fullstack) and [GitHub Insights](https://github.com/Toufiqul-27/github-insights-dashboard)
 
-The illustrations in project cards are **schematic**, not application screenshots. Some recent web repositories began as AI-assisted learning builds and need further independent review, integration tests and deployment. The site does not claim they are production systems.
+## Important transparency
 
-## Running locally
+Project illustrations are **typographic concepts**, not screenshots of deployed apps. Recent web/backend learning projects were initially developed with substantial AI assistance. Real-world deployment and deeper integration testing remain future work. This site avoids invented performance metrics, employment experience or testimonials.
 
-No dependencies or build tools needed. Clone the repository and open `index.html`, or run a local server:
+## Local development
 
-```sh
+Open \`index.html\`, or serve locally:
+
+\`\`\`bash
 python -m http.server 8080
-```
+\`\`\`
 
-Open http://localhost:8080/.
+Go to http://localhost:8080/.
 
-## Deploy
+## Structure
 
-GitHub Pages publishes the `main` branch using [the deployment workflow](.github/workflows/deploy-pages.yml). See the repository's **Actions** tab for deployment status.
+- \`index.html\` — content, accessible structure, case-study briefs and project links
+- \`styles.css\` — visual system, dark/light themes and responsive layout
+- \`script.js\` — project filtering, theme toggle, mobile navigation, copy-email and scroll behavior
+- \`portrait-toufiqul.jpg\` — existing portrait
+- \`.github/workflows/deploy-pages.yml\` — deploys website on GitHub Pages after pushes to \`main\`
 
-## Customize
+## Notes
 
-- `index.html`: content, links, metadata, project summaries
-- `styles.css`: layout, color tokens, theme and responsive styles
-- `script.js`: menu, color theme and reveal effects
-- `portrait-toufiqul.jpg`: hero photograph
-
-Do not commit personal tokens, passwords or other secrets.
-
----
+The website is static, keeps no login credentials and has no external tracking script. A theme preference may be saved locally in the browser. Do not commit tokens or personal secrets.
 
 Made for [Toufiqul Islam](https://github.com/Toufiqul-27).
